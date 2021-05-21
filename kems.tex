@@ -1,0 +1,112 @@
+\makeatletter
+\newcommand{\@DefineSingleKemProperty}[3]{%
+\expandafter\newcommand\csname kem-#1-#2\endcsname{#3}%
+}
+\newcommand{\@DefineAllKemProperties}[7]{%
+    \@DefineSingleKemProperty{#1}{name}{#1}
+    \@DefineSingleKemProperty{#1}{level}{#2}
+    \@DefineSingleKemProperty{#1}{status}{#3}
+    \@DefineSingleKemProperty{#1}{assumption}{#4}
+    \@DefineSingleKemProperty{#1}{pk}{#5}
+    \@DefineSingleKemProperty{#1}{ct}{#6}
+    \@DefineSingleKemProperty{#1}{sk}{#7}
+}
+\makeatother
+
+\newcommand{\KemProperty}[2]{\csname kem-#1-#2\endcsname}
+
+\makeatletter
+
+\@DefineAllKemProperties{X25519}{0}{0}{Diffie-Hellman}{32}{32}{32}
+
+\@DefineAllKemProperties{SIKEp434}{1}{Alternate}{SIDH}{330}{346}{374}
+
+\@DefineAllKemProperties{SIKEp503}{2}{Alternate}{SIDH}{378}{402}{434}
+
+\@DefineAllKemProperties{SIKEp610}{3}{Alternate}{SIDH}{642}{486}{524}
+
+\@DefineAllKemProperties{SIKEp751}{5}{Alternate}{SIDH}{564}{596}{644}
+
+\@DefineAllKemProperties{SIKEp434-compressed}{1}{Alternate}{SIDH}{197}{236}{350}
+
+\@DefineAllKemProperties{SIKEp503-compressed}{2}{Alternate}{SIDH}{225}{280}{407}
+
+\@DefineAllKemProperties{SIKEp610-compressed}{3}{Alternate}{SIDH}{274}{336}{491}
+
+\@DefineAllKemProperties{SIKEp751-compressed}{5}{Alternate}{SIDH}{335}{410}{602}
+
+\@DefineAllKemProperties{Kyber512}{1}{Finalist}{MLWE}{800}{768}{1632}
+
+\@DefineAllKemProperties{Kyber768}{3}{Finalist}{MLWE}{1184}{1088}{2400}
+
+\@DefineAllKemProperties{Kyber1024}{5}{Finalist}{MLWE}{1568}{1568}{3168}
+
+\@DefineAllKemProperties{mceliece348864}{1}{Finalist}{McEliece}{261120}{128}{6492}
+
+\@DefineAllKemProperties{mceliece348864f}{1}{Finalist}{McEliece}{261120}{128}{6492}
+
+\@DefineAllKemProperties{mceliece460896}{3}{Finalist}{McEliece}{524160}{188}{13608}
+
+\@DefineAllKemProperties{mceliece460896f}{3}{Finalist}{McEliece}{524160}{188}{13608}
+
+\@DefineAllKemProperties{mceliece6688128}{5}{Finalist}{McEliece}{1044992}{240}{13932}
+
+\@DefineAllKemProperties{mceliece6688128f}{5}{Finalist}{McEliece}{1044992}{240}{13932}
+
+\@DefineAllKemProperties{mceliece6960119}{5}{Finalist}{McEliece}{1047319}{226}{13948}
+
+\@DefineAllKemProperties{mceliece6960119f}{5}{Finalist}{McEliece}{1047319}{226}{13948}
+
+\@DefineAllKemProperties{mceliece8192128}{5}{Finalist}{McEliece}{1357824}{240}{14120}
+
+\@DefineAllKemProperties{mceliece8192128f}{5}{Finalist}{McEliece}{1357824}{240}{14120}
+
+\@DefineAllKemProperties{LightSABER}{1}{Finalist}{MLWR}{672}{736}{1568}
+
+\@DefineAllKemProperties{SABER}{3}{Finalist}{MLWR}{992}{1088}{2304}
+
+\@DefineAllKemProperties{FireSABER}{5}{Finalist}{MLWR}{1312}{1472}{3040}
+
+\@DefineAllKemProperties{HQC-128}{1}{Alternate}{QC codes}{2249}{4481}{2289}
+
+\@DefineAllKemProperties{HQC-192}{3}{Alternate}{QC codes}{4522}{9026}{4562}
+
+\@DefineAllKemProperties{HQC-256}{5}{Alternate}{QC codes}{7245}{14469}{7285}
+
+\@DefineAllKemProperties{NTRU-HPS-2048-509}{1}{Finalist}{NTRU}{699}{699}{935}
+
+\@DefineAllKemProperties{NTRU-HPS-2048-677}{3}{Finalist}{NTRU}{930}{930}{1234}
+
+\@DefineAllKemProperties{NTRU-HPS-4096-821}{5}{Finalist}{NTRU}{1230}{1230}{1590}
+
+\@DefineAllKemProperties{NTRU-HRSS-701}{3}{Finalist}{NTRU}{1138}{1138}{1450}
+
+\@DefineAllKemProperties{ntrulpr653}{2}{Alternate}{NTRU}{897}{1025}{1125}
+
+\@DefineAllKemProperties{ntrulpr761}{3}{Alternate}{NTRU}{1039}{1167}{1294}
+
+\@DefineAllKemProperties{ntrulpr857}{4}{Alternate}{NTRU}{1184}{1312}{1463}
+
+\@DefineAllKemProperties{sntrup653}{2}{Alternate}{NTRU}{994}{897}{1518}
+
+\@DefineAllKemProperties{sntrup761}{3}{Alternate}{NTRU}{1158}{1039}{1763}
+
+\@DefineAllKemProperties{sntrup857}{4}{Alternate}{NTRU}{1322}{1184}{1999}
+
+\@DefineAllKemProperties{BIKE1-L1-FO}{1}{Alternate}{QC codes}{2946}{2946}{6460}
+
+\@DefineAllKemProperties{BIKE1-L3-FO}{3}{Alternate}{QC codes}{6206}{6206}{13236}
+
+\@DefineAllKemProperties{FrodoKEM-640-AES}{1}{Alternate}{LWE}{9616}{9720}{19888}
+
+\@DefineAllKemProperties{FrodoKEM-640-SHAKE}{1}{Alternate}{LWE}{9616}{9720}{19888}
+
+\@DefineAllKemProperties{FrodoKEM-976-AES}{3}{Alternate}{LWE}{15632}{15744}{31296}
+
+\@DefineAllKemProperties{FrodoKEM-976-SHAKE}{3}{Alternate}{LWE}{15632}{15744}{31296}
+
+\@DefineAllKemProperties{FrodoKEM-1344-AES}{5}{Alternate}{LWE}{21520}{21632}{43088}
+
+\@DefineAllKemProperties{FrodoKEM-1344-SHAKE}{5}{Alternate}{LWE}{21520}{21632}{43088}
+
+\makeatother

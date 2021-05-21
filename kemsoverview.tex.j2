@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\input{kems.tex}
+
+
+\newcommand{\kemtablerow}[1]{%
+    \KemProperty{#1}{name} &
+    \KemProperty{#1}{level} &
+    \KemProperty{#1}{status} &
+    \KemProperty{#1}{pk} &
+    \KemProperty{#1}{ct} &
+    \KemProperty{#1}{sk} \\
+}
+
+\begin{document}
+\begin{tabular}{lclrrr}
+    \bf Name & Level & Status & pk & ct & sk \\ \hline
+
+<% for kem in kems %>
+    \kemtablerow{<< kem['name'] >>}
+<% endfor %>
+
+\end{tabular}
+
+\end{document}

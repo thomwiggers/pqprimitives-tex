@@ -1,0 +1,22 @@
+\makeatletter
+\newcommand{\@DefineSingleKemProperty}[3]{%
+\expandafter\newcommand\csname kem-#1-#2\endcsname{#3}%
+}
+\newcommand{\@DefineAllKemProperties}[7]{%
+    \@DefineSingleKemProperty{#1}{name}{#1}
+    \@DefineSingleKemProperty{#1}{level}{#2}
+    \@DefineSingleKemProperty{#1}{status}{#3}
+    \@DefineSingleKemProperty{#1}{assumption}{#4}
+    \@DefineSingleKemProperty{#1}{pk}{#5}
+    \@DefineSingleKemProperty{#1}{ct}{#6}
+    \@DefineSingleKemProperty{#1}{sk}{#7}
+}
+\makeatother
+
+\newcommand{\KemProperty}[2]{\csname kem-#1-#2\endcsname}
+
+\makeatletter
+<% for kem in kems %>
+\@DefineAllKemProperties{<< kem['name'] >>}{<< kem['level'] >>}{<< kem['status'] >>}{<< kem['assumption'] >>}{<< kem['pk'] >>}{<< kem['ct'] >>}{<< kem['sk'] >>}
+<% endfor %>
+\makeatother
