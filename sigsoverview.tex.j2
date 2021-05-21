@@ -1,0 +1,25 @@
+\documentclass{standalone}
+
+\input{sigs.tex}
+
+
+\newcommand{\sigtablerow}[1]{%
+    \SigProperty{#1}{name} &
+    \SigProperty{#1}{level} &
+    \SigProperty{#1}{status} &
+    \SigProperty{#1}{pk} &
+    \SigProperty{#1}{ct} &
+    \SigProperty{#1}{sk} \\
+}
+
+\begin{document}
+\begin{tabular}{lclrrr}
+    \bf Name & Level & Status & pk & ct & sk \\ \hline
+
+<% for sig in sigs %>
+    \sigtablerow{<< sig['name'] >>}
+<% endfor %>
+
+\end{tabular}
+
+\end{document}

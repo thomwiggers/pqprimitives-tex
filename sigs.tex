@@ -1,0 +1,150 @@
+\makeatletter
+\newcommand{\@DefineSingleSigProperty}[3]{%
+\expandafter\newcommand\csname sig-#1-#2\endcsname{#3}%
+}
+\newcommand{\@DefineAllSigProperties}[7]{%
+    \@DefineSingleSigProperty{#1}{name}{#1}
+    \@DefineSingleSigProperty{#1}{level}{#2}
+    \@DefineSingleSigProperty{#1}{status}{#3}
+    \@DefineSingleSigProperty{#1}{assumption}{#4}
+    \@DefineSingleSigProperty{#1}{pk}{#5}
+    \@DefineSingleSigProperty{#1}{ct}{#6}
+    \@DefineSingleSigProperty{#1}{sk}{#7}
+}
+\makeatother
+
+\newcommand{\SigProperty}[2]{\csname sig-#1-#2\endcsname}
+
+\makeatletter
+
+\@DefineAllSigProperties{Dilithium2}{2}{Finalist}{MLWE + MSIS}{1312}{2420}{2528}
+
+\@DefineAllSigProperties{Dilithium3}{3}{Finalist}{MLWE + MSIS}{1952}{4000}{3293}
+
+\@DefineAllSigProperties{Dilithium5}{5}{Finalist}{MLWE + MSIS}{2592}{4595}{4864}
+
+\@DefineAllSigProperties{Falcon-512}{1}{Finalist}{NTRU lattice}{897}{690}{1281}
+
+\@DefineAllSigProperties{Falcon-1024}{5}{Finalist}{NTRU lattice}{1793}{1330}{2305}
+
+\@DefineAllSigProperties{picnic-L1-FS}{1}{Alternate}{Symmetric crypto}{33}{34036}{49}
+
+\@DefineAllSigProperties{picnic-L1-UR}{1}{Alternate}{Symmetric crypto}{33}{53965}{49}
+
+\@DefineAllSigProperties{picnic-L1-full}{1}{Alternate}{Symmetric crypto}{35}{32065}{52}
+
+\@DefineAllSigProperties{picnic-L3-FS}{3}{Alternate}{Symmetric crypto}{49}{76776}{73}
+
+\@DefineAllSigProperties{picnic-L3-UR}{3}{Alternate}{Symmetric crypto}{49}{121849}{73}
+
+\@DefineAllSigProperties{picnic-L3-full}{3}{Alternate}{Symmetric crypto}{49}{71183}{73}
+
+\@DefineAllSigProperties{picnic-L5-FS}{5}{Alternate}{Symmetric crypto}{65}{132860}{97}
+
+\@DefineAllSigProperties{picnic-L5-UR}{5}{Alternate}{Symmetric crypto}{65}{209510}{97}
+
+\@DefineAllSigProperties{picnic-L5-full}{5}{Alternate}{Symmetric crypto}{65}{126290}{97}
+
+\@DefineAllSigProperties{picnic3-L1}{1}{Alternate}{Symmetric crypto}{35}{14612}{52}
+
+\@DefineAllSigProperties{picnic3-L3}{3}{Alternate}{Symmetric crypto}{49}{35028}{73}
+
+\@DefineAllSigProperties{picnic3-L5}{5}{Alternate}{Symmetric crypto}{65}{61028}{97}
+
+\@DefineAllSigProperties{Rainbow-I-Classic}{1}{Finalist}{UOV / MQ}{161600}{66}{103648}
+
+\@DefineAllSigProperties{Rainbow-I-Circumzenithal}{1}{Finalist}{UOV / MQ}{60192}{66}{103648}
+
+\@DefineAllSigProperties{Rainbow-I-Compressed}{1}{Finalist}{UOV / MQ}{60192}{66}{64}
+
+\@DefineAllSigProperties{Rainbow-III-Classic}{3}{Finalist}{UOV / MQ}{882080}{164}{626048}
+
+\@DefineAllSigProperties{Rainbow-III-Circumzenithal}{3}{Finalist}{UOV / MQ}{264608}{164}{626048}
+
+\@DefineAllSigProperties{Rainbow-III-Compressed}{3}{Finalist}{UOV / MQ}{264608}{164}{64}
+
+\@DefineAllSigProperties{Rainbow-V-Classic}{5}{Finalist}{UOV / MQ}{1930600}{212}{1408736}
+
+\@DefineAllSigProperties{Rainbow-V-Circumzenithal}{5}{Finalist}{UOV / MQ}{536136}{212}{1408736}
+
+\@DefineAllSigProperties{Rainbow-V-Compressed}{5}{Finalist}{UOV / MQ}{536136}{212}{64}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-128f-robust}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-128f-simple}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-128s-robust}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-128s-simple}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-192f-robust}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-192f-simple}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-robust}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-simple}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-256f-robust}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-256f-simple}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-256s-robust}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{SPHINCS+-Haraka-256s-simple}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-128f-robust}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-128f-simple}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-128s-robust}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-128s-simple}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-192f-robust}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-192f-simple}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-192s-robust}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-192s-simple}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-256f-robust}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-256f-simple}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-256s-robust}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHA256-256s-simple}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-128f-robust}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-128f-simple}{1}{Alternate}{Hash-based}{32}{16976}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-128s-robust}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-128s-simple}{1}{Alternate}{Hash-based}{32}{8080}{64}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-192f-robust}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-192f-simple}{3}{Alternate}{Hash-based}{48}{35664}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-192s-robust}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-192s-simple}{3}{Alternate}{Hash-based}{48}{17064}{96}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-256f-robust}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-256f-simple}{5}{Alternate}{Hash-based}{64}{49216}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-256s-robust}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{SPHINCS+-SHAKE256-256s-simple}{5}{Alternate}{Hash-based}{64}{29792}{128}
+
+\@DefineAllSigProperties{GeMSS128}{1}{Alternate}{Multivariate}{352188}{33}{16}
+
+\@DefineAllSigProperties{GeMSS192}{3}{Alternate}{Multivariate}{1237964}{52}{24}
+
+\@DefineAllSigProperties{GeMSS256}{5}{Alternate}{Multivariate}{3040700}{72}{32}
+
+\makeatother
