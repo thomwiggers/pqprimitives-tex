@@ -2,14 +2,15 @@
 \newcommand{\@DefineSingleKemProperty}[3]{%
 \expandafter\newcommand\csname kem-#1-#2\endcsname{#3}%
 }
-\newcommand{\@DefineAllKemProperties}[7]{%
+\newcommand{\@DefineAllKemProperties}[8]{%
     \@DefineSingleKemProperty{#1}{name}{#1}
-    \@DefineSingleKemProperty{#1}{level}{#2}
-    \@DefineSingleKemProperty{#1}{status}{#3}
-    \@DefineSingleKemProperty{#1}{assumption}{#4}
-    \@DefineSingleKemProperty{#1}{pk}{#5}
-    \@DefineSingleKemProperty{#1}{ct}{#6}
-    \@DefineSingleKemProperty{#1}{sk}{#7}
+    \@DefineSingleKemProperty{#1}{display}{#2}
+    \@DefineSingleKemProperty{#1}{level}{#3}
+    \@DefineSingleKemProperty{#1}{status}{#4}
+    \@DefineSingleKemProperty{#1}{assumption}{#5}
+    \@DefineSingleKemProperty{#1}{pk}{#6}
+    \@DefineSingleKemProperty{#1}{ct}{#7}
+    \@DefineSingleKemProperty{#1}{sk}{#8}
 }
 \makeatother
 
@@ -17,6 +18,6 @@
 
 \makeatletter
 <% for kem in kems %>
-\@DefineAllKemProperties{<< kem['name'] >>}{<< kem['level'] >>}{<< kem['status'] >>}{<< kem['assumption'] >>}{<< kem['pk'] >>}{<< kem['ct'] >>}{<< kem['sk'] >>}
+\@DefineAllKemProperties{<< kem['name'] >>}{<< kem['display'] >>}{<< kem['level'] >>}{<< kem['status'] >>}{<< kem['assumption'] >>}{<< kem['pk'] >>}{<< kem['ct'] >>}{<< kem['sk'] >>}
 <% endfor %>
 \makeatother

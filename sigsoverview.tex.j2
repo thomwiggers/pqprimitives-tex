@@ -8,13 +8,13 @@
     \SigProperty{#1}{level} &
     \SigProperty{#1}{status} &
     \SigProperty{#1}{pk} &
-    \SigProperty{#1}{ct} &
+    \SigProperty{#1}{sig} &
     \SigProperty{#1}{sk} \\
 }
 
 \begin{document}
 \begin{tabular}{lclrrr}
-    \bf Name & Level & Status & pk & ct & sk \\ \hline
+    \bf Name & Level & Status & pk & sig & sk \\ \hline
 
 <% for sig in sigs %>
     \sigtablerow{<< sig['name'] >>}

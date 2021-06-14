@@ -2,14 +2,15 @@
 \newcommand{\@DefineSingleSigProperty}[3]{%
 \expandafter\newcommand\csname sig-#1-#2\endcsname{#3}%
 }
-\newcommand{\@DefineAllSigProperties}[7]{%
+\newcommand{\@DefineAllSigProperties}[8]{%
     \@DefineSingleSigProperty{#1}{name}{#1}
-    \@DefineSingleSigProperty{#1}{level}{#2}
-    \@DefineSingleSigProperty{#1}{status}{#3}
-    \@DefineSingleSigProperty{#1}{assumption}{#4}
-    \@DefineSingleSigProperty{#1}{pk}{#5}
-    \@DefineSingleSigProperty{#1}{ct}{#6}
-    \@DefineSingleSigProperty{#1}{sk}{#7}
+    \@DefineSingleSigProperty{#1}{display}{#2}
+    \@DefineSingleSigProperty{#1}{level}{#3}
+    \@DefineSingleSigProperty{#1}{status}{#4}
+    \@DefineSingleSigProperty{#1}{assumption}{#5}
+    \@DefineSingleSigProperty{#1}{pk}{#6}
+    \@DefineSingleSigProperty{#1}{sig}{#7}
+    \@DefineSingleSigProperty{#1}{sk}{#8}
 }
 \makeatother
 
@@ -17,6 +18,6 @@
 
 \makeatletter
 <% for sig in sigs %>
-\@DefineAllSigProperties{<< sig['name'] >>}{<< sig['level'] >>}{<< sig['status'] >>}{<< sig['assumption'] >>}{<< sig['pk'] >>}{<< sig['sig'] >>}{<< sig['sk'] >>}
+\@DefineAllSigProperties{<< sig['name'] >>}{<< sig['display'] >>}{<< sig['level'] >>}{<< sig['status'] >>}{<< sig['assumption'] >>}{<< sig['pk'] >>}{<< sig['sig'] >>}{<< sig['sk'] >>}
 <% endfor %>
 \makeatother
