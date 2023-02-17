@@ -1,11 +1,17 @@
 display,name,level,status,assumption,pk,sig,sk
 RSA-2048,RSA-2048,0,Pre-quantum,RSA,272,256,9999
-Dilithium,Dilithium2,2,Selected,MLWE + MSIS,1312,2420,2528
-Dilithium,Dilithium3,3,Selected,MLWE + MSIS,1952,3293,4000
-Dilithium,Dilithium5,5,Selected,MLWE + MSIS,2592,4595,4864
-Falcon,Falcon-512,1,Selected,NTRU lattice,897,666,1281
-Falcon,Falcon-1024,5,Selected,NTRU lattice,1793,1280,2305
+Dilithium2,Dilithium2,2,Selected,MLWE + MSIS,1312,2420,2528
+Dilithium3,Dilithium3,3,Selected,MLWE + MSIS,1952,3293,4000
+Dilithium5,Dilithium5,5,Selected,MLWE + MSIS,2592,4595,4864
+Falcon-512,Falcon-512,1,Selected,NTRU lattice,897,666,1281
+Falcon-1024,Falcon-1024,5,Selected,NTRU lattice,1793,1280,2305
 \xmssmt,XMSSMTs,1,Custom,Hash-based,32,979,10000
+SPHINCS$^\textrm{+}$-128f,SPHINCS+-128f,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$-128s,SPHINCS+-128s,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$-192f,SPHINCS+-192f,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$-192s,SPHINCS+-192s,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$-256f,SPHINCS+-256f,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$-256s,SPHINCS+-256s,5,Selected,Hash-based,64,29792,128
 SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128f-robust,1,Selected,Hash-based,32,17088,64
 SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128f-simple,1,Selected,Hash-based,32,17088,64
 SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128s-robust,1,Selected,Hash-based,32,7856,64

@@ -1,18 +1,18 @@
 display,name,level,status,assumption,pk,ct,sk
 ECDH,X25519,0,0,Diffie-Hellman,32,32,32
-Kyber,Kyber512,1,Selected,MLWE,800,768,1632
-Kyber,Kyber768,3,Selected,MLWE,1184,1088,2400
-Kyber,Kyber1024,5,Selected,MLWE,1568,1568,3168
-McEliece,mceliece348864,1,Round-4,McEliece,261120,96,6492
-McEliece,mceliece348864f,1,Round-4,McEliece,261120,96,6492
-McEliece,mceliece460896,3,Round-4,McEliece,524160,156,13608
-McEliece,mceliece460896f,3,Round-4,McEliece,524160,156,13608
-McEliece,mceliece6688128,5,Round-4,McEliece,1044992,208,13932
-McEliece,mceliece6688128f,5,Round-4,McEliece,1044992,208,13932
-McEliece,mceliece6960119,5,Round-4,McEliece,1047319,194,13948
-McEliece,mceliece6960119f,5,Round-4,McEliece,1047319,194,13948
-McEliece,mceliece8192128,5,Round-4,McEliece,1357824,208,14120
-McEliece,mceliece8192128f,5,Round-4,McEliece,1357824,208,14120
+Kyber-512,Kyber512,1,Selected,MLWE,800,768,1632
+Kyber-768,Kyber768,3,Selected,MLWE,1184,1088,2400
+Kyber-1024,Kyber1024,5,Selected,MLWE,1568,1568,3168
+McEliece348864,mceliece348864,1,Round-4,McEliece,261120,96,6492
+McEliece348864f,mceliece348864f,1,Round-4,McEliece,261120,96,6492
+McEliece460896,mceliece460896,3,Round-4,McEliece,524160,156,13608
+McEliece460896f,mceliece460896f,3,Round-4,McEliece,524160,156,13608
+McEliece6688128,mceliece6688128,5,Round-4,McEliece,1044992,208,13932
+McEliece6688128,mceliece6688128f,5,Round-4,McEliece,1044992,208,13932
+McEliece6960119,mceliece6960119,5,Round-4,McEliece,1047319,194,13948
+McEliece6960119f,mceliece6960119f,5,Round-4,McEliece,1047319,194,13948
+McEliece8192128,mceliece8192128,5,Round-4,McEliece,1357824,208,14120
+McEliece8192128f,mceliece8192128f,5,Round-4,McEliece,1357824,208,14120
 HQC,HQC-128,1,Round-4,QC codes,2249,4481,2289
 HQC,HQC-192,3,Round-4,QC codes,4522,9026,4562
 HQC,HQC-256,5,Round-4,QC codes,7245,14469,7285
