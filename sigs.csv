@@ -1,68 +1,68 @@
 display,name,level,status,assumption,pk,sig,sk
 RSA-2048,RSA-2048,0,Pre-quantum,RSA,272,256,9999
-Dilithium,Dilithium2,2,Finalist,MLWE + MSIS,1312,2420,2528
-Dilithium,Dilithium3,3,Finalist,MLWE + MSIS,1952,4000,3293
-Dilithium,Dilithium5,5,Finalist,MLWE + MSIS,2592,4595,4864
-Falcon,Falcon-512,1,Finalist,NTRU lattice,897,690,1281
-Falcon,Falcon-1024,5,Finalist,NTRU lattice,1793,1330,2305
-Picnic,picnic-L1-FS,1,Alternate,Symmetric crypto,33,34036,49
-Picnic,picnic-L1-UR,1,Alternate,Symmetric crypto,33,53965,49
-Picnic,picnic-L1-full,1,Alternate,Symmetric crypto,35,32065,52
-Picnic,picnic-L3-FS,3,Alternate,Symmetric crypto,49,76776,73
-Picnic,picnic-L3-UR,3,Alternate,Symmetric crypto,49,121849,73
-Picnic,picnic-L3-full,3,Alternate,Symmetric crypto,49,71183,73
-Picnic,picnic-L5-FS,5,Alternate,Symmetric crypto,65,132860,97
-Picnic,picnic-L5-UR,5,Alternate,Symmetric crypto,65,209510,97
-Picnic,picnic-L5-full,5,Alternate,Symmetric crypto,65,126290,97
-Picnic,picnic3-L1,1,Alternate,Symmetric crypto,35,14612,52
-Picnic,picnic3-L3,3,Alternate,Symmetric crypto,49,35028,73
-Picnic,picnic3-L5,5,Alternate,Symmetric crypto,65,61028,97
-Rainbow,Rainbow-I-Classic,1,Finalist,UOV / MQ,161600,66,103648
-Rainbow,Rainbow-I-Circumzenithal,1,Finalist,UOV / MQ,60192,66,103648
-Rainbow,Rainbow-I-Compressed,1,Finalist,UOV / MQ,60192,66,64
-Rainbow,Rainbow-III-Classic,3,Finalist,UOV / MQ,882080,164,626048
-Rainbow,Rainbow-III-Circumzenithal,3,Finalist,UOV / MQ,264608,164,626048
-Rainbow,Rainbow-III-Compressed,3,Finalist,UOV / MQ,264608,164,64
-Rainbow,Rainbow-V-Classic,5,Finalist,UOV / MQ,1930600,212,1408736
-Rainbow,Rainbow-V-Circumzenithal,5,Finalist,UOV / MQ,536136,212,1408736
-Rainbow,Rainbow-V-Compressed,5,Finalist,UOV / MQ,536136,212,64
-SPHINCS+,SPHINCS+-Haraka-128f-robust,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-Haraka-128f-simple,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-Haraka-128s-robust,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-Haraka-128s-simple,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-Haraka-192f-robust,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-Haraka-192f-simple,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-Haraka-192s-robust,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-Haraka-192s-simple,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-Haraka-256f-robust,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-Haraka-256f-simple,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-Haraka-256s-robust,5,Alternate,Hash-based,64,29792,128
-SPHINCS+,SPHINCS+-Haraka-256s-simple,5,Alternate,Hash-based,64,29792,128
-SPHINCS+,SPHINCS+-SHA256-128f-robust,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-SHA256-128f-simple,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-SHA256-128s-robust,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-SHA256-128s-simple,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-SHA256-192f-robust,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-SHA256-192f-simple,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-SHA256-192s-robust,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-SHA256-192s-simple,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-SHA256-256f-robust,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-SHA256-256f-simple,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-SHA256-256s-robust,5,Alternate,Hash-based,64,29792,128
-SPHINCS+,SPHINCS+-SHA256-256s-simple,5,Alternate,Hash-based,64,29792,128
-SPHINCS+,SPHINCS+-SHAKE256-128f-robust,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-SHAKE256-128f-simple,1,Alternate,Hash-based,32,16976,64
-SPHINCS+,SPHINCS+-SHAKE256-128s-robust,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-SHAKE256-128s-simple,1,Alternate,Hash-based,32,8080,64
-SPHINCS+,SPHINCS+-SHAKE256-192f-robust,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-SHAKE256-192f-simple,3,Alternate,Hash-based,48,35664,96
-SPHINCS+,SPHINCS+-SHAKE256-192s-robust,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-SHAKE256-192s-simple,3,Alternate,Hash-based,48,17064,96
-SPHINCS+,SPHINCS+-SHAKE256-256f-robust,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-SHAKE256-256f-simple,5,Alternate,Hash-based,64,49216,128
-SPHINCS+,SPHINCS+-SHAKE256-256s-robust,5,Alternate,Hash-based,64,29792,128
-SPHINCS+,SPHINCS+-SHAKE256-256s-simple,5,Alternate,Hash-based,64,29792,128
+Dilithium,Dilithium2,2,Selected,MLWE + MSIS,1312,2420,2528
+Dilithium,Dilithium3,3,Selected,MLWE + MSIS,1952,3293,4000
+Dilithium,Dilithium5,5,Selected,MLWE + MSIS,2592,4595,4864
+Falcon,Falcon-512,1,Selected,NTRU lattice,897,666,1281
+Falcon,Falcon-1024,5,Selected,NTRU lattice,1793,1280,2305
+\xmssmt,XMSSMTs,1,Custom,Hash-based,32,979,10000
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128f-robust,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128f-simple,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128s-robust,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-128s-simple,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-192f-robust,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-192f-simple,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-192s-robust,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-256f-robust,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-256f-simple,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-256s-robust,5,Selected,Hash-based,64,29792,128
+SPHINCS$^\textrm{+}$,SPHINCS+-Haraka-256s-simple,5,Selected,Hash-based,64,29792,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-128f-robust,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-128f-simple,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-128s-robust,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-128s-simple,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-192f-robust,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-192f-simple,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-192s-robust,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-256f-robust,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-256f-simple,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-256s-robust,5,Selected,Hash-based,64,29792,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHA2-256s-simple,5,Selected,Hash-based,64,29792,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-128f-robust,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-128f-simple,1,Selected,Hash-based,32,17088,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-128s-robust,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-128s-simple,1,Selected,Hash-based,32,7856,64
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-192f-robust,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-192f-simple,3,Selected,Hash-based,48,35664,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-192s-robust,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-256f-robust,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-256f-simple,5,Selected,Hash-based,64,49856,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-256s-robust,5,Selected,Hash-based,64,29792,128
+SPHINCS$^\textrm{+}$,SPHINCS+-SHAKE-256s-simple,5,Selected,Hash-based,64,29792,128
 GeMSS,GeMSS128,1,Alternate,Multivariate,352188,33,16
 GeMSS,GeMSS192,3,Alternate,Multivariate,1237964,52,24
 GeMSS,GeMSS256,5,Alternate,Multivariate,3040700,72,32
-\xmssmt,XMSSMTs,1,Custom,Hash-based,32,979,10000
+Picnic,picnic-L1-FS,1,Eliminated,Symmetric crypto,33,34036,49
+Picnic,picnic-L1-UR,1,Eliminated,Symmetric crypto,33,53965,49
+Picnic,picnic-L1-full,1,Eliminated,Symmetric crypto,35,32065,52
+Picnic,picnic-L3-FS,3,Eliminated,Symmetric crypto,49,76776,73
+Picnic,picnic-L3-UR,3,Eliminated,Symmetric crypto,49,121849,73
+Picnic,picnic-L3-full,3,Eliminated,Symmetric crypto,49,71183,73
+Picnic,picnic-L5-FS,5,Eliminated,Symmetric crypto,65,132860,97
+Picnic,picnic-L5-UR,5,Eliminated,Symmetric crypto,65,209510,97
+Picnic,picnic-L5-full,5,Eliminated,Symmetric crypto,65,126290,97
+Picnic,picnic3-L1,1,Eliminated,Symmetric crypto,35,14612,52
+Picnic,picnic3-L3,3,Eliminated,Symmetric crypto,49,35028,73
+Picnic,picnic3-L5,5,Eliminated,Symmetric crypto,65,61028,97
+Rainbow,Rainbow-I-Classic,1,Eliminated,UOV / MQ,161600,66,103648
+Rainbow,Rainbow-I-Circumzenithal,1,Eliminated,UOV / MQ,60192,66,103648
+Rainbow,Rainbow-I-Compressed,1,Eliminated,UOV / MQ,60192,66,64
+Rainbow,Rainbow-III-Classic,3,Eliminated,UOV / MQ,882080,164,626048
+Rainbow,Rainbow-III-Circumzenithal,3,Eliminated,UOV / MQ,264608,164,626048
+Rainbow,Rainbow-III-Compressed,3,Eliminated,UOV / MQ,264608,164,64
+Rainbow,Rainbow-V-Classic,5,Eliminated,UOV / MQ,1930600,212,1408736
+Rainbow,Rainbow-V-Circumzenithal,5,Eliminated,UOV / MQ,536136,212,1408736
+Rainbow,Rainbow-V-Compressed,5,Eliminated,UOV / MQ,536136,212,64
