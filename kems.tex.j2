@@ -1,6 +1,9 @@
+% Ignore wrong-length-of-dash warnings
+% chktex-file 8
+%
 \makeatletter
 \newcommand{\@DefineSingleKemProperty}[3]{%
-\expandafter\newcommand\csname kem-#1-#2\endcsname{#3}%
+\csdef{kem-#1-#2}{#3}%
 }
 \newcommand{\@DefineAllKemProperties}[8]{%
     \@DefineSingleKemProperty{#1}{name}{#1}
@@ -14,7 +17,7 @@
 }
 \makeatother
 
-\newcommand{\KemProperty}[2]{\csname kem-#1-#2\endcsname}
+\newcommand{\KemProperty}[2]{\csuse{kem-#1-#2}}
 
 \makeatletter
 <% for kem in kems %>

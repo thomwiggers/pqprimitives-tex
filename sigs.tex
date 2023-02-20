@@ -1,6 +1,9 @@
+% Ignore "wrong length of dash" warnings
+% chktex-file 8
+
 \makeatletter
 \newcommand{\@DefineSingleSigProperty}[3]{%
-\expandafter\newcommand\csname sig-#1-#2\endcsname{#3}%
+\csdef{sig-#1-#2}{#3}%
 }
 \newcommand{\@DefineAllSigProperties}[8]{%
     \@DefineSingleSigProperty{#1}{name}{#1}
@@ -14,7 +17,7 @@
 }
 \makeatother
 
-\newcommand{\SigProperty}[2]{\csname sig-#1-#2\endcsname}
+\newcommand{\SigProperty}[2]{\csuse{sig-#1-#2}}
 
 \makeatletter
 
@@ -32,89 +35,89 @@
 
 \@DefineAllSigProperties{XMSSMTs}{\xmssmt}{1}{Custom}{Hash-based}{32}{979}{10000}
 
-\@DefineAllSigProperties{SPHINCS+-128f}{SPHINCS$^\textrm{+}$-128f}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-128f}{SPHINCS\textsuperscript{+}-128f}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-128s}{SPHINCS$^\textrm{+}$-128s}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-128s}{SPHINCS\textsuperscript{+}-128s}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-192f}{SPHINCS$^\textrm{+}$-192f}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-192f}{SPHINCS\textsuperscript{+}-192f}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-192s}{SPHINCS$^\textrm{+}$-192s}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-192s}{SPHINCS\textsuperscript{+}-192s}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-256f}{SPHINCS$^\textrm{+}$-256f}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-256f}{SPHINCS\textsuperscript{+}-256f}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-256s}{SPHINCS$^\textrm{+}$-256s}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-256s}{SPHINCS\textsuperscript{+}-256s}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-128f-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-Haraka-128f-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-128f-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-Haraka-128f-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-128s-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-Haraka-128s-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-128s-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-Haraka-128s-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192f-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192f-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192f-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192s-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192s-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-256f-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-Haraka-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-256f-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-Haraka-256f-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-256s-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-Haraka-256s-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-256s-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-Haraka-256s-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-128f-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-SHA2-128f-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-128f-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-SHA2-128f-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-128s-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-SHA2-128s-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-128s-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-SHA2-128s-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192f-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192f-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192f-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192s-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192s-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-256f-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-SHA2-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-256f-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-SHA2-256f-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-256s-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-SHA2-256s-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-256s-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-SHA2-256s-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-128f-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-128f-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-128f-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{17088}{64}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-128f-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{17088}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-128s-robust}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-128s-robust}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-128s-simple}{SPHINCS$^\textrm{+}$}{1}{Selected}{Hash-based}{32}{7856}{64}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-128s-simple}{SPHINCS\textsuperscript{+}}{1}{Selected}{Hash-based}{32}{7856}{64}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192f-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192f-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192f-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{35664}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-robust}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-simple}{SPHINCS$^\textrm{+}$}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-256f-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-256f-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{49856}{128}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-256f-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-256s-robust}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-256s-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-256s-simple}{SPHINCS$^\textrm{+}$}{5}{Selected}{Hash-based}{64}{29792}{128}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-256s-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
 \@DefineAllSigProperties{GeMSS128}{GeMSS}{1}{Alternate}{Multivariate}{352188}{33}{16}
 

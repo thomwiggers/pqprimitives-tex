@@ -1,6 +1,9 @@
+% Ignore "wrong length of dash" warnings
+% chktex-file 8
+
 \makeatletter
 \newcommand{\@DefineSingleSigProperty}[3]{%
-\expandafter\newcommand\csname sig-#1-#2\endcsname{#3}%
+\csdef{sig-#1-#2}{#3}%
 }
 \newcommand{\@DefineAllSigProperties}[8]{%
     \@DefineSingleSigProperty{#1}{name}{#1}
@@ -14,7 +17,7 @@
 }
 \makeatother
 
-\newcommand{\SigProperty}[2]{\csname sig-#1-#2\endcsname}
+\newcommand{\SigProperty}[2]{\csuse{sig-#1-#2}}
 
 \makeatletter
 <% for sig in sigs %>
