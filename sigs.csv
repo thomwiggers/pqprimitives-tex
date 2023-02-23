@@ -48,9 +48,9 @@ SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256f-robust,5,Selected,Hash-based,64,4
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256f-simple,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256s-robust,5,Selected,Hash-based,64,29792,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256s-simple,5,Selected,Hash-based,64,29792,128
-GeMSS,GeMSS128,1,Alternate,Multivariate,352188,33,16
-GeMSS,GeMSS192,3,Alternate,Multivariate,1237964,52,24
-GeMSS,GeMSS256,5,Alternate,Multivariate,3040700,72,32
+GeMSS,GeMSS128,1,Eliminated,Multivariate,352188,33,16
+GeMSS,GeMSS192,3,Eliminated,Multivariate,1237964,52,24
+GeMSS,GeMSS256,5,Eliminated,Multivariate,3040700,72,32
 Picnic,picnic-L1-FS,1,Eliminated,Symmetric crypto,33,34036,49
 Picnic,picnic-L1-UR,1,Eliminated,Symmetric crypto,33,53965,49
 Picnic,picnic-L1-full,1,Eliminated,Symmetric crypto,35,32065,52
