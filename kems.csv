@@ -1,5 +1,5 @@
 display,name,level,status,assumption,pk,ct,sk
-ECDH,X25519,0,0,Diffie-Hellman,32,32,32
+X25519,X25519,0,0,Diffie-Hellman,32,32,32
 Kyber-512,Kyber512,1,Selected,MLWE,800,768,1632
 Kyber-768,Kyber768,3,Selected,MLWE,1184,1088,2400
 Kyber-1024,Kyber1024,5,Selected,MLWE,1568,1568,3168

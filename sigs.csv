@@ -1,5 +1,5 @@
 display,name,level,status,assumption,pk,sig,sk
-RSA-2048,RSA-2048,0,Pre-quantum,RSA,272,256,9999
+RSA-2048,RSA2048,0,Pre-quantum,RSA,272,256,9999
 Dilithium2,Dilithium2,2,Selected,MLWE + MSIS,1312,2420,2528
 Dilithium3,Dilithium3,3,Selected,MLWE + MSIS,1952,3293,4000
 Dilithium5,Dilithium5,5,Selected,MLWE + MSIS,2592,4595,4864
