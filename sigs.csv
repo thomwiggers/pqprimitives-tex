@@ -11,7 +11,7 @@ Falcon-1024,Falcon1024,5,Selected,NTRU lattice,1793,1280,2305
 SPHINCS\textsuperscript{+}-128f,SPHINCS+-128f,1,Selected,Hash-based,32,17088,64
 SPHINCS\textsuperscript{+}-128s,SPHINCS+-128s,1,Selected,Hash-based,32,7856,64
 SPHINCS\textsuperscript{+}-192f,SPHINCS+-192f,3,Selected,Hash-based,48,35664,96
-SPHINCS\textsuperscript{+}-192s,SPHINCS+-192s,3,Selected,Hash-based,48,1622,96
+SPHINCS\textsuperscript{+}-192s,SPHINCS+-192s,3,Selected,Hash-based,48,16224,96
 SPHINCS\textsuperscript{+}-256f,SPHINCS+-256f,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+}-256s,SPHINCS+-256s,5,Selected,Hash-based,64,29792,128
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-128f-robust,1,Selected,Hash-based,32,17088,64
@@ -20,8 +20,8 @@ SPHINCS\textsuperscript{+},SPHINCS+-Haraka-128s-robust,1,Selected,Hash-based,32,
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-128s-simple,1,Selected,Hash-based,32,7856,64
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192f-robust,3,Selected,Hash-based,48,35664,96
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192f-simple,3,Selected,Hash-based,48,35664,96
-SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192s-robust,3,Selected,Hash-based,48,1622,96
-SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192s-robust,3,Selected,Hash-based,48,16224,96
+SPHINCS\textsuperscript{+},SPHINCS+-Haraka-192s-simple,3,Selected,Hash-based,48,16224,96
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-256f-robust,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-256f-simple,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-Haraka-256s-robust,5,Selected,Hash-based,64,29792,128
@@ -32,8 +32,8 @@ SPHINCS\textsuperscript{+},SPHINCS+-SHA2-128s-robust,1,Selected,Hash-based,32,78
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-128s-simple,1,Selected,Hash-based,32,7856,64
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192f-robust,3,Selected,Hash-based,48,35664,96
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192f-simple,3,Selected,Hash-based,48,35664,96
-SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192s-robust,3,Selected,Hash-based,48,1622,96
-SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192s-robust,3,Selected,Hash-based,48,16224,96
+SPHINCS\textsuperscript{+},SPHINCS+-SHA2-192s-simple,3,Selected,Hash-based,48,16224,96
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-256f-robust,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-256f-simple,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHA2-256s-robust,5,Selected,Hash-based,64,29792,128
@@ -44,8 +44,8 @@ SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-128s-robust,1,Selected,Hash-based,32,7
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-128s-simple,1,Selected,Hash-based,32,7856,64
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192f-robust,3,Selected,Hash-based,48,35664,96
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192f-simple,3,Selected,Hash-based,48,35664,96
-SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192s-robust,3,Selected,Hash-based,48,1622,96
-SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192s-simple,3,Selected,Hash-based,48,1622,96
+SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192s-robust,3,Selected,Hash-based,48,16224,96
+SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-192s-simple,3,Selected,Hash-based,48,16224,96
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256f-robust,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256f-simple,5,Selected,Hash-based,64,49856,128
 SPHINCS\textsuperscript{+},SPHINCS+-SHAKE-256s-robust,5,Selected,Hash-based,64,29792,128
