@@ -5,7 +5,9 @@ Dilithium3,Dilithium3,3,Selected,MLWE + MSIS,1952,3293,4000
 Dilithium5,Dilithium5,5,Selected,MLWE + MSIS,2592,4595,4864
 Falcon-512,Falcon512,1,Selected,NTRU lattice,897,666,1281
 Falcon-1024,Falcon1024,5,Selected,NTRU lattice,1793,1280,2305
-\xmssmt,XMSSMTs,1,Custom,Hash-based,32,979,10000
+\xmsss-I,XMSSMTs1,1,Custom,Hash-based,32,979,2734
+\xmsss-III,XMSSMTs3,3,Custom,Hash-based,48,1851,4134
+\xmsss-V,XMSSMTs5,3,Custom,Hash-based,64,2979,5662
 SPHINCS\textsuperscript{+}-128f,SPHINCS+-128f,1,Selected,Hash-based,32,17088,64
 SPHINCS\textsuperscript{+}-128s,SPHINCS+-128s,1,Selected,Hash-based,32,7856,64
 SPHINCS\textsuperscript{+}-192f,SPHINCS+-192f,3,Selected,Hash-based,48,35664,96
