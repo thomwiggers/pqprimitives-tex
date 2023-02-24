@@ -21,7 +21,7 @@
 
 \makeatletter
 
-\@DefineAllSigProperties{RSA-2048}{RSA-2048}{0}{Pre-quantum}{RSA}{272}{256}{9999}
+\@DefineAllSigProperties{RSA2048}{RSA-2048}{0}{Pre-quantum}{RSA}{272}{256}{9999}
 
 \@DefineAllSigProperties{Dilithium2}{Dilithium2}{2}{Selected}{MLWE + MSIS}{1312}{2420}{2528}
 
@@ -29,11 +29,15 @@
 
 \@DefineAllSigProperties{Dilithium5}{Dilithium5}{5}{Selected}{MLWE + MSIS}{2592}{4595}{4864}
 
-\@DefineAllSigProperties{Falcon-512}{Falcon-512}{1}{Selected}{NTRU lattice}{897}{666}{1281}
+\@DefineAllSigProperties{Falcon512}{Falcon-512}{1}{Selected}{NTRU lattice}{897}{666}{1281}
 
-\@DefineAllSigProperties{Falcon-1024}{Falcon-1024}{5}{Selected}{NTRU lattice}{1793}{1280}{2305}
+\@DefineAllSigProperties{Falcon1024}{Falcon-1024}{5}{Selected}{NTRU lattice}{1793}{1280}{2305}
 
-\@DefineAllSigProperties{XMSSMTs}{\xmssmt}{1}{Custom}{Hash-based}{32}{979}{10000}
+\@DefineAllSigProperties{XMSS1}{\xmsss-I}{1}{Custom}{Hash-based}{32}{979}{2734}
+
+\@DefineAllSigProperties{XMSS3}{\xmsss-III}{3}{Custom}{Hash-based}{48}{1851}{4134}
+
+\@DefineAllSigProperties{XMSS5}{\xmsss-V}{5}{Custom}{Hash-based}{64}{2979}{5662}
 
 \@DefineAllSigProperties{SPHINCS+-128f}{SPHINCS\textsuperscript{+}-128f}{1}{Selected}{Hash-based}{32}{17088}{64}
 
@@ -41,7 +45,7 @@
 
 \@DefineAllSigProperties{SPHINCS+-192f}{SPHINCS\textsuperscript{+}-192f}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-192s}{SPHINCS\textsuperscript{+}-192s}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-192s}{SPHINCS\textsuperscript{+}-192s}{3}{Selected}{Hash-based}{48}{16224}{96}
 
 \@DefineAllSigProperties{SPHINCS+-256f}{SPHINCS\textsuperscript{+}-256f}{5}{Selected}{Hash-based}{64}{49856}{128}
 
@@ -59,9 +63,9 @@
 
 \@DefineAllSigProperties{SPHINCS+-Haraka-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
-\@DefineAllSigProperties{SPHINCS+-Haraka-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-Haraka-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
 \@DefineAllSigProperties{SPHINCS+-Haraka-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
@@ -83,9 +87,9 @@
 
 \@DefineAllSigProperties{SPHINCS+-SHA2-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHA2-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHA2-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
 \@DefineAllSigProperties{SPHINCS+-SHA2-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
@@ -107,9 +111,9 @@
 
 \@DefineAllSigProperties{SPHINCS+-SHAKE-192f-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{35664}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-robust}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
-\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{1622}{96}
+\@DefineAllSigProperties{SPHINCS+-SHAKE-192s-simple}{SPHINCS\textsuperscript{+}}{3}{Selected}{Hash-based}{48}{16224}{96}
 
 \@DefineAllSigProperties{SPHINCS+-SHAKE-256f-robust}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{49856}{128}
 
@@ -119,11 +123,11 @@
 
 \@DefineAllSigProperties{SPHINCS+-SHAKE-256s-simple}{SPHINCS\textsuperscript{+}}{5}{Selected}{Hash-based}{64}{29792}{128}
 
-\@DefineAllSigProperties{GeMSS128}{GeMSS}{1}{Alternate}{Multivariate}{352188}{33}{16}
+\@DefineAllSigProperties{GeMSS128}{GeMSS}{1}{Eliminated}{Multivariate}{352188}{33}{16}
 
-\@DefineAllSigProperties{GeMSS192}{GeMSS}{3}{Alternate}{Multivariate}{1237964}{52}{24}
+\@DefineAllSigProperties{GeMSS192}{GeMSS}{3}{Eliminated}{Multivariate}{1237964}{52}{24}
 
-\@DefineAllSigProperties{GeMSS256}{GeMSS}{5}{Alternate}{Multivariate}{3040700}{72}{32}
+\@DefineAllSigProperties{GeMSS256}{GeMSS}{5}{Eliminated}{Multivariate}{3040700}{72}{32}
 
 \@DefineAllSigProperties{picnic-L1-FS}{Picnic}{1}{Eliminated}{Symmetric crypto}{33}{34036}{49}
 
